@@ -2,6 +2,7 @@
 .main-container{
     display: flex;
     width: 1200px;
+    justify-content: space-between;
 }
 
 /*GRENERAL*/
@@ -22,8 +23,7 @@ article ul{
 /* ASIDE*/
 aside{
     background-color: #647087;
-    width: 30%;
-    margin-right: 3%;
+    flex-basis: 30%;
 }
 aside *{
     color: #fff;
@@ -40,6 +40,9 @@ aside section h2:first-child{
 }
 
 /*MAIN*/
+main{
+    flex-basis: 60%;
+}
 main section h2 {
     letter-spacing: 5px;
 }
