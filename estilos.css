@@ -1,197 +1,311 @@
-body{
-    min-height: 100vh;
-    margin: 0;
-    background: #DCDCDC;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.encabezado{
-    position: relative;
-    bottom: 85px;
-    left: -80px;
-    width: 275px;
-    height: 420px;
-    padding: 20px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:left;
+html {
+	font-size: 62.5%;
 }
 
-.encabezado img{
-    width: 120px;
+:root {
+	--color-primary: #0c0c0c;
+	--color-secondary: #d2d3b4;
+	--color-dark: #f7f1f1;
+	--color-light: #0e0d0d;
+	--color-gray: rgb(5, 5, 5);
+	--font-family: 'Nunito', sans-serif;
+	--font-size: 1.6rem;
+	--font-200: 200;
+	--font-300: 300;
+	--font-400: 400;
+	--font-600: 600;
+	--font-700: 700;
+	--font-800: 800;
 }
 
-.progress{
-    position: relative;
-    bottom: 202px;
-    left: -50px;
-    width: 250px;
-    height: 200px;
-    padding: 10px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:center;
+body {
+	background: var(--color-secondary);
+	color: var(--color-light);
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	font-weight: var(--font-300);
 }
 
-.progress2{
-    position: relative;
-    left: -280px;
-    bottom: 170px;
+ul {
+	list-style: none;
 }
 
-.progress3{
-    position: absolute;
-    left: 450px;
-    bottom: 420px;
+a {
+	text-decoration: none;
+	color: var(--color-primary);
 }
 
-.ramas{
-    position: absolute;
-    left: 510px;
-    bottom: 520px;
+figure img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
-.ramas1{
-    position: absolute;
-    left: 520px;
-    bottom: 485px;
+h1,
+h2,
+h3 {
+	color: var(--color-primary);
 }
 
-.ramas2{
-    position: absolute;
-    left: 520px;
-    bottom: 450px;
+h2 {
+	font-size: 2.4rem;
+	margin-bottom: 4rem;
 }
 
-
-.titulo{
-    position: absolute;
-    bottom: 300px;
-    left: 400px;
-    width: 930px;
-    height: 70px;
-    padding: 10px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:left;
+.container {
+	width: 90%;
+	padding: 4rem 1rem;
+	max-width: 120rem;
+	margin: 0 auto;
 }
 
-
-.proyecto{
-    position: absolute;
-    bottom: 50px;
-    left: 400px;
-    padding: 10px;
-    width: 950px;
-    height: 200px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:end;
+.bg-dark {
+	background: var(--color-dark);
+	border-radius: 1rem;
+}
+.bg-gray {
+	background: var(--color-dark);
+	border-radius: 1rem;
+	color: var(--color-gray);
 }
 
-.paisaje{
-    position: absolute;
-    width: 200px;
-    height: 175px;
-    bottom: 80px;
-    left: 450px;
+.mb-2 {
+	margin-bottom: 2rem;
 }
 
-.proyecto1{
-    position: absolute;
-    bottom: -200px;
-    left: 400px;
-    width: 950px;
-    height: 200px;
-    padding: 10px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:end;
+.grid {
+	display: grid;
+	grid-template: auto / 1fr;
+	gap: 2rem;
+}
+@media screen and (min-width: 800px) {
+.grid {
+	grid-template: auto / 1fr 1.5fr;
+}
 }
 
-.paisaje1{
-    position: absolute;
-    width: 200px;
-    height: 175px;
-    bottom: 15px;
-    left: 50px;
+.p-section {
+	padding: 1rem;
+}
+@media screen and (min-width: 375px) {
+.p-section {
+	padding: 2rem;
+}
 }
 
-.proyecto2{
-    position: absolute;
-    bottom: -500px;
-    left: 400px;
-    padding: 10px;
-    width: 950px;
-    height: 200px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:end;
+/* profile */
+.profile {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	column-gap: 3rem;
 }
-
-.paisaje2{
-    position: absolute;
-    width: 200px;
-    height: 175px;
-    bottom: 15px;
-    left: 50px;
+.profile-image {
+	width: 100%;
+	height: 40rem;
+	overflow: hidden;
+	border-radius: 0.8rem;
 }
-
-.proyecto3{
-    position: absolute;
-    bottom: -670px;
-    left: 65px;
-    width: 300px;
-    height: 790px;
-    padding: 10px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:left;
+.profile p {
+	color: var(--color-gray);
+	font-size: 1.8rem;
 }
-
-.paisaje3{
-    position: absolute;
-    width: 280px;
-    height: 185px;
-    bottom: 400px;
-    left: 20px;
-    border-radius: 15px;
+.profile-content-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+	justify-content: space-between;
+	margin-bottom: 3rem;
 }
-
-.proyecto4{
-    position: absolute;
-    bottom: -990px;
-    left: 70px;
-    width: 300px;
-    height: 700px;
-    padding: 10px;
-    text-align:left;
+.content-contact span {
+	display: block;
+	margin-bottom: 0.8rem;
 }
-
-.paisaje4{
-    position: absolute;
-    width: 280px;
-    height: 185px;
-    bottom: 360px;
-    left: 20px;
-    border-radius: 15px;
+.content-contact span i {
+	margin-right: 1.5rem;
 }
-
-.practicas  {
-    position: relative;
-    bottom: -1250px;
-    left: -820px;
-    width: 270px;
-    height: 420px;
-    padding: 20px;
-    background: #eeeeee;
-    border-radius: 14px;
-    text-align:left;
+.content-title h1 {
+	font-size: 2.4rem;
+	font-weight: var(--font-600);
 }
+.content-title p {
+	font-size: 1.8rem;
+}
+.profile-content-desc {
+	margin-bottom: 1rem;
+}
+@media screen and (min-width: 375px) {
+	.profile-image {
+		height: 30rem;
+	}
+}
+@media screen and (min-width: 500px) {
+	.profile-image {
+		height: 35rem;
+	}
+	.profile-content-info {
+		flex-direction: row;
+	}
+}
+@media screen and (min-width: 600px) {
+	.profile-image {
+		height: 30rem;
+	}
+}
+@media screen and (min-width: 800px) {
+	.profile-content-info {
+		flex-direction: column;
+	}
+}
+/* profile */
 
-.practicas img{
-    width: 120px;
+
+/* hobby */
+.hobby {
+	margin-bottom: 3rem;
+	width: 100%;
+}
+.hobby-image {
+	height: 14rem;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 1.5rem;
+}
+.hobby h3 {
+	margin: 2rem 0 1rem;
+}
+.hobbies .hobby:last-child {
+	margin-bottom: 0;
+}
+@media screen and (min-width: 500px) {
+	.hobby-image {
+		height: 20rem;
+	}
+}
+/* hobby */
+
+/* skills */
+.skills {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.skills h3 {
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+}
+.skill {
+	margin-bottom: 1.5rem;
+}
+.bg {
+	width: 100%;
+	height: 1rem;
+	background: var(--color-secondary);
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.percent {
+	background: rgb(130, 178, 192);
+	height: 100%;
+	width: 45%;
+}
+.skills-list {
+	width: 100%;
+}
+.skills-list .skill:last-child {
+	margin-bottom: 0;
+}
+.w-75 {
+	width: 75%;
+}
+.w-80 {
+	width: 80%;
+}
+.w-85 {
+	width: 85%;
+}
+.w-90 {
+	width: 90%;
+}
+.w-95 {
+	width: 95%;
+}
+@media screen and (min-width: 800px) {
+	.skills {
+		flex-direction: row;
+	}
+}
+/* skills */
+
+/* projects */
+.projects {
+	width: 100%;
+}
+.project {
+	margin-bottom: 4rem;
+	box-shadow: 0 0 1rem 0 rgba(154, 210, 228, 0.2);
+	padding: 2rem;
+	border-radius: 1rem;
+}
+.projects .project:last-child {
+	margin-bottom: 2rem;
+}
+.projects-counter {
+	padding: 2rem 0;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	font-size: 1.8rem;
+}
+.project-tags {
+	display: flex;
+	column-gap: 1.5rem;
+	flex-wrap: wrap;
+}
+.project-title {
+	font-size: 2.4rem;
+	margin: 2.5rem 0 2rem;
+}
+.project-buttons {
+	margin-top: 4rem;
+	display: flex;
+	column-gap: 2rem;
+}
+.project-desc {
+	font-size: 1.4rem;
+}
+.button {
+	padding: 1.5rem 4rem;
+	font-size: 1.8rem;
+	border: none;
+	border-radius: 2rem;
+	background: var(--color-secondary);
+	color: var(--color-light);
+	cursor: pointer;
+}
+.button-outline {
+	background: transparent;
+	border: 0.1rem solid var(--color-primary);
+	color: var(--color-primary);
+}
+@media screen and (min-width: 1200px) {
+.projects .profile {
+	display: grid;
+	grid-template: 1fr / 1fr 1.8fr;
+}
+.projects .profile-image {
+	height: 31rem;
+}
+.project-title {
+	font-size: 2rem;
+	margin: 2rem 0 1.5rem;
+}
 }

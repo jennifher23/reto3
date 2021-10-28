@@ -5,78 +5,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Portafolio</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="encabezado">
-        <img  src="img/image1.jpeg" alt=vegetales>
-        <h2><font face="Berlin Sans FB">Pamela Chugchilan</font></h2>
-        <p>Front-end developer</p>
-        <h3><font size="4">pamelachugchilan23@gmail.com</font></h3>
-        <h3><font size="4">(+593) 979760696</font></h3>
-        <p>Desarrollador motivado, que está dispuesto a aprender y crear aplicaciones de interfaz de usuario excepcionales.</p>
-    </div>
-    <div class="progress">
-        <h3>FRONT END</h3>
-        <progress max="100" value="30"></progress>
-    </div>
-    <div class="progress2">
-        <progress max="100" value="50"></progress>
-    </div>
-    <div class="progress3">
-        <progress max="100" value="40"></progress>
-    </div>
-    <div class="ramas">
-        <li>Javascrip</li>
-    </div>
-    <div class="ramas1">
-        <li>Html5</li>
-    </div>
-    <div class="ramas2">
-        <li>Css3</li>
-    </div>
+  
+    <section class="container grid">
+        <div class="grid-left">
+            <section class="bg-dark profile p-section mb-2">
+                <figure class="profile-image">
+                    <img src="img/image1.jpeg" alt="Jennifher Chugchilan" />
+                </figure>
 
-    <div class="titulo">
-        <h1>Proyectos </h1>
-    </div>
-    <div class="proyecto">
-        <p>#HTML #CSS </p>
-        <h1>Pincenter</h1>
-        <p>Este trabajo es hecho a base de html y css el cual nos deja ver una gran galeria de imagenes</p>
-        <p>que representan los hermosos paisajes que tiene nuestro planeta tierra</p>
-    </div>
-    <img class="paisaje" src="img/image6.jpeg">
-    <div class="proyecto1">
-        <p>#HTML #CSS  #Js</p>
-        <h1>Login</h1>
-        <p>En este proyecto esta empleado lo que es html5, css3, y un poco de Javascrip</p>
-        <p>este login ayuda al usuario a ingresar a la pagina principal.</p>
-        <img class="paisaje1" src="img/image4.jpeg" >
-    </div>
-    <div class="proyecto2">
-        <p>#HTML #CSS  </p>
-        <h1>Portafolio</h1>
-        <p>En este proyecto esta empleado lo que es html5 y css3 el cual consiste en crear una galeria</p>
-        <p>cuales mediante hover cuando el mouse pase por una de ellas sobresalga la tarjeta seleccionada.</p>
-        <img class="paisaje2" src="img/image3.jpeg">
-    </div>
-    <div class="proyecto3">
-        <h1>Hobbies</h1>
-        <h2>Boxeo</h2>
-        <p>Usualmente practico 2 horas diarias </p>
-        <p>Toda la semana</p>
-        <img class="paisaje3" src="img/boxeo.jpeg">
-    </div>
-    <div class="proyecto4">
-        <h2>Ayudo a los animales de mi barrio</h2>
-        <p>Ayudo a los animales de la calle</p>
-        <p>Tambien practico en los animales de granja</p>
-        <img class="paisaje4" src="img/veterinaria.jpeg">
-    </div>
-    <div class="practicas">
-        <img  src="img/image1.jpeg" alt=vegetales>
-        <h1><font face="Berlin Sans FB">Yavirac Tech</font></h1>
-        <p>Empresa dedicada a la simulacion paractica</p>
-    </div>
+                <div class="profile-content">
+                    <div class="profile-content-info">
+                        <div class="content-title">
+                            <h1>Jennifher Chugchilan</h1>
+                            <p>Estudiante Analisis de sistemas</p>
+                        </div>
+                        <div class="content-contact">
+                        <span><i class="fa fa-envelope"></i>
+                        pamelachugchilan23@gmail.com</span>
+                        <span><i class="fa fa-phone"></i> (+593) 979760696</span>
+                    </div>
+                </div>
+                    <p class="profile-content-desc">
+                        Soy muy motivado a la hora de hacer mis trabajos.
+                    </p>
+                    <p class="profile-content-desc">
+                        Espero convertirme en una gran programadora.
+                    </p>
+            </section>
+        </div>
+            <section class="bg-dark hobbies p-section mb-2">
+                <h2>Hobbies</h2>
+
+                <article class="hobby">
+                    <figure class="hobby-image">
+                        <img src="img/boxeo.jpeg" alt="Boxeo" />
+                    </figure>
+
+                    <h3>Boxeo</h3>
+                    <p>El deporte que me apasiona.</p>
+                </article>
+
+                <article class="hobby">
+                    <figure class="hobby-image">
+                        <img src="img/veterinaria.jpeg" alt="Veterinaria" />
+                    </figure>
+
+                    <h3>Veterinaria</h3>
+                    <p>Un trabajo que me encanta.</p>
+                </article>
+
+                <article class="hobby">
+                    <figure class="hobby-image">
+                        <img src="img/futbol.jpg" alt="Futbol" />
+                    </figure>
+
+                    <h3>Futbol/h3>
+                    <p>El futbol es un deporte que lo practico.</p>
+                </article>
+            </section>
+
+            <div class="grid-right">
+                <section class="skills mb-2">
+                    <article class="skills-list bg-gray p-section">
+                        <h3>Front End</h3>
+                        <div class="skill">
+                            <span>Html</span>
+                            <div class="bg">
+                                <div class="percent"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="bg">
+                                <div class="percent w-90"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <div class="bg">
+                                <div class="percent w-85"></div>
+                            </div>
+                        </div>          
+                    </article>
+                </section>
+                <section class="projects bg-dark p-section mb-2">
+                    <p class="projects-counter">Projects (3)</p>
+                    <div class="project profile">
+                        <figure class="profile-image">
+                            <img src="img/proyecto1.jpeg" alt="Project" />
+                        </figure>
+                        <div class="profile-content">
+                            <div class="project-tags">
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                                <span>#responsive</span>
+                            </div>
+                            <h4 class="project-title">My gallery</h4>
+                            <p class="project-desc">
+                                Este proyecto es un desafio de DevChallenge, una gallerya con grid y responsive.
+                            </p>
+                            <div class="project-buttons">
+                                <button class="button">Demo</button>
+                                <button class="button button-outline">Code</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project profile">
+                        <figure class="profile-image">
+                            <img src="img/image6.jpeg" alt="Project" />
+                        </figure>
+
+                        <div class="profile-content">
+                            <div class="project-tags">
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                                <span>#responsive</span>
+                            </div>
+                            <h4 class="project-title">Maquetacion Css</h4>
+                            <p class="project-desc">
+                                Mi primer proyecto de maquetacion con  ccs3 puro y html.
+                            </p>
+                            <div class="project-buttons">
+                                <button class="button">Demo</button>
+                                <button class="button button-outline">Code</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project profile">
+                        <figure class="profile-image">
+                            <img src="img/image3.jpeg" alt="Project" />
+                        </figure>
+
+                        <div class="profile-content">
+                            <div class="project-tags">
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                            <span>#responsive</span>
+                        </div>
+                        <h4 class="project-title">Proyecto Integrador - Primer Semestre</h4>
+                        <p class="project-desc">
+                            Este proyecto lo hice junto a mis compañeros al terminar el semestre.
+                        </p>
+                        <div class="project-buttons">
+                            <button class="button">Demo</button>
+                            <button class="button button-outline">Code</button>
+                        </div>
+                    </div>
+                    <div class="project profile">
+                        <figure class="profile-image">
+                            <img src="img/hover.jpeg" alt="Project" />
+                        </figure>
+
+                        <div class="profile-content">
+                            <div class="project-tags">
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                            <span>#responsive</span>
+                        </div>
+                        <h4 class="project-title">Proyect Scroller</h4>
+                        <p class="project-desc">
+                            Este proyecto pagina web cpn un scroller animacion de iamgenes y con login, todo first-phone con responsive.
+                        </p>
+                        <div class="project-buttons">
+                            <button class="button">Demo</button>
+                            <button class="button button-outline">Code</button>
+                        </div>
+                    </div>
+                    <div class="project profile">
+                        <figure class="profile-image">
+                            <img src="img/noticias.jpeg" alt="Project" />
+                        </figure>
+  
+                        <div class="profile-content">
+                            <div class="project-tags">
+                                <span>#HTML</span>
+                                <span>#CSS</span>
+                                <span>#responsive</span>
+                            </div>
+                            <h4 class="project-title">Pagina RTC </h4>
+                            <p class="project-desc">
+                                Es una replica de la pagina principal de noticias de la RTC.
+                            </p>
+                            <div class="project-buttons">
+                                <button class="button">Demo</button>
+                                <button class="button button-outline">Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project profile">
+                            <figure class="profile-image">
+                                <img src="img/Snake.jpeg" alt="Project" />
+                            </figure>
+  
+                            <div class="profile-content">
+                                <div class="project-tags">
+                                    <span>#HTML</span>
+                                    <span>#CSS</span>
+                                    <span>#Javascript</span>
+                                </div>
+                                <h4 class="project-title">Snake Game</h4>
+                                <p class="project-desc">
+                                    Este proyecto es de un juego de un gusanito que come para crecer.
+                                </p>
+                                <div class="project-buttons">
+                                    <button class="button">Demo</button>
+                                    <button class="button button-outline">Code</button>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+            </div>
+    </section>
 </body>
+
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</html>
 </html>
